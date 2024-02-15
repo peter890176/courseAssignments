@@ -1,0 +1,21 @@
+#this won't be run
+load res/JPG_Example_Original.jpg j0
+save res/PNG_Example_Original.png j0 
+save res/PPM_Example_Original.ppm j0
+red-component j0 JPG_RED
+save res/JPG_RED.jpg JPG_RED
+green-component j0 JPG_GREEN
+save res/JPG_GREEN.jpg JPG_GREEN
+blue-component j0 JPG_BLUE
+save res/JPG_BLUE.jpg JPG_BLUE
+value-component j0 JPG_VALUE
+save res/JPG_VALUE.jpg JPG_VALUE
+luma-component j0 JPG_LUMA
+save res/JPG_LUMA.jpg JPG_LUMA
+intensity-component j0 JPG_INTENSITY
+save res/JPG_JPG_INTENSITY.jpg JPG_INTENSITY
+run res/runFile2.txt
+horizontal-flip j0 JPG_HORIZONTAL
+save res/JPG_HORIZONTAL.jpg JPG_HORIZONTAL
+vertical-flip j0 JPG_VERTICAL
+save res/JPG_VERTICAL.jpg JPG_VERTICAL

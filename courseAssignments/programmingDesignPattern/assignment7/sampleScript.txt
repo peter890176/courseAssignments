@@ -1,0 +1,3 @@
+load sampleImage.jpg sample
+dither sample sample_d
+save sampleImage_dither.jpg sample_d

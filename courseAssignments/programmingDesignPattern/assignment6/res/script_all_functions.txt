@@ -1,0 +1,63 @@
+#"run" and "exit" both function properly, but since they are not needed here, I've commented them with #.
+#run runFile.txt
+#exit
+load JPG.jpg jpg
+save PPM.ppm jpg
+save PNG.png jpg
+save JPEG.jpeg jpg
+red-component jpg jpg_red
+save jpg_red.jpg jpg_red
+green-component jpg jpg_green
+save jpg_green.jpg jpg_green
+blue-component jpg jpg_blue
+save jpg_blue.jpg jpg_blue
+horizontal-flip jpg jpg_horizontal
+save jpg_horizontal.jpg jpg_horizontal
+vertical-flip jpg jpg_vertical
+save jpg_vertical.jpg jpg_vertical
+brighten 50 jpg jpg_brighten_50
+save jpg_brighten_50.jpg jpg_brighten_50
+brighten -50 jpg jpg_brighten_minus_50
+save jpg_brighten_minus_50.jpg jpg_brighten_minus_50
+rgb-split jpg jpg_r jpg_g jpg_b
+save jpg_r.jpg jpg_r
+save jpg_g.jpg jpg_g
+save jpg_b.jpg jpg_b
+rgb-combine jpg_combined jpg_r jpg_g jpg_b
+save jpg_combined.jpg jpg_combined
+histogram jpg jpg_histogram
+save jpg_histogram.jpg jpg_histogram
+compress 50 jpg jpg_compressed_50
+save jpg_compressed_50.jpg jpg_compressed_50
+value-component jpg jpg_value
+save jpg_value.jpg jpg_value
+value-component jpg jpg_vale_split split 50
+save jpg_vale_split.jpg jpg_vale_split
+luma-component jpg jpg_luma
+save jpg_luma.jpg jpg_luma
+luma-component jpg jpg_luma_split split 50
+save jpg_luma_split.jpg jpg_luma_split
+intensity-component jpg jpg_intensity
+save jpg_intensity.jpg jpg_intensity
+intensity-component jpg jpg_intensity_split split 50
+save jpg_intensity_split.jpg jpg_intensity_split
+blur jpg jpg_blur
+save jpg_blur.jpg jpg_blur
+blur jpg jpg_blur_split split 50
+save jpg_blur_split.jpg jpg_blur_split
+sharpen jpg jpg_sharpen
+save jpg_sharpen.jpg jpg_sharpen
+sharpen jpg jpg_sharpen_split split 50
+save jpg_sharpen_split.jpg jpg_sharpen_split
+sepia jpg jpg_sepia
+save jpg_sepia.jpg jpg_sepia
+sepia jpg jpg_sepia_split split 50
+save jpg_sepia_split.jpg jpg_sepia_split
+color-correct jpg jpg_color_corrected
+save jpg_color_corrected.jpg jpg_color_corrected
+color-correct jpg jpg_color_corrected_split split 50
+save jpg_color_corrected_split.jpg jpg_color_corrected_split
+levels-adjust 20 128 255 jpg jpg_level_adjusted
+save jpg_level_adjusted.jpg jpg_level_adjusted
+levels-adjust 20 128 255 jpg jpg_level_adjusted_split split 50
+save jpg_level_adjusted_split.jpg jpg_level_adjusted_split

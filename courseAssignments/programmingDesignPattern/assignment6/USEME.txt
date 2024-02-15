@@ -1,0 +1,15 @@
+Note:Our program works in Windows System by double click the .jar file, but it does not support double click to run the program in the macbook.
+If user is using macbook, should use belows:  
+java -jar Program.jar -file path-of-script-file
+java -jar Program.jar -text
+java -jar Program.jar
+
+For the GUI:
+-Load the image by clicking the "Open" button
+-If you successfully load an image, the left-bottom corner(Messages) will prompt "Load success!"
+-After loading the image, at any time, you could click to save the image.(If the image was splitting, it will save the unsplited one).Our program support two ways to decide the image format. One way is using the combo box next to the "Save as..." label, it will automatically adds the format after you click the "Save" button to choose the file path. For example, if you choose a .jpg in combox and click the "Save" button, and then key in the file name "ABC" in the propmted dialog and click save, our program will save your image as ABC.jpg.
+The other way to save is click the save button and directly key in the whole image name with desinated format, such as "ABC.png". Our program will take this as image format, even if the combo box is choosing other formats, such as .jpg, .png or .ppm.
+-Choose the function in the combo box. there is a 'Function:' label next to the combo box.
+-If you choose "Compress" or "Levels-adjust" function, the label(instructions) will instruct you to key in corresponding arguments, on its right side. For other functions, you can directly press the Go button to process the image.
+-After clicking the "Go" button, for some functions, which support the split function, you can key in Split Percentage next to the "Split" button. If you click the "Split" button, it will split the image according to the percentage you key-in. The Split button will change into Resume button. Click it again, the original image will be back.
+-At any time, you can click the default exit button to terminate the program.

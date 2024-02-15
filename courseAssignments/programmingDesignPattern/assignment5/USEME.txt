@@ -1,0 +1,53 @@
+Summarize:
+Our program supports two ways to run the program, including command line using terminal and script command using console.
+The example for the command line using terminal:
+java -jar assignment5.jar -file name-of-script.txt
+
+The following script commands are also supported by our program:
+load image-path image-name
+save image-path image-name
+run script-file
+exit
+red-component image-name dest-image-name
+green-component image-name dest-image-name
+blue-component image-name dest-image-name
+horizontal-flip image-name dest-image-name
+vertical-flip image-name dest-image-name
+brighten increment image-name dest-image-name
+rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue
+rgb-combine image-name red-image green-image blue-image
+histogram image-name dest-image-name
+compress percentage image-name dest-image-name
+value-component image-name dest-image-name
+value-component image-name dest-image-name split percentage
+luma-component image-name dest-image-name
+luma-component image-name dest-image-name split percentage
+intensity-component image-name dest-image-name
+intensity-component image-name dest-image-name split percentage
+blur image-name dest-image-name
+blur image-name dest-image-name split percentage
+sharpen image-name dest-image-name
+sharpen image-name dest-image-name split percentage
+sepia image-name dest-image-name
+sepia image-name dest-image-name split percentage
+color-correct image-name dest-image-name
+color-correct image-name dest-image-name split percentage
+levels-adjust b m w image-name dest-image-name
+levels-adjust b m w image-name dest-image-name split percentage
+
+Conditions:
+These three script commands load, run and exit can be used at any time. Enter the exit command can terminate the program. The only conditions are load command should be used before the image operations command and save should be used after the image operations.
+
+Valid example:
+load image-path image-name
+rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue
+save image-path image-name
+exit
+
+Invalid example:
+save image-path image-name
+load image-path image-name
+
+Invalid example:
+red-component image-name dest-image-name
+save image-path image-name

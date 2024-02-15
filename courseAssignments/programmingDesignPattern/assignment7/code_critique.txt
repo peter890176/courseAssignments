@@ -1,0 +1,28 @@
+Code Critique/Review:
+
+The overall design demonstrates high cohesion and low coupling, thus providing the program with a high level of  clarity and flexibility.
+The utilization of general commands and the features interface in the GUI controller demonstrates flexibility by reducing coupling 
+between the view and controller. This design enhances the maintainability and extensibility for future code and feature additions. 
+The interfaces provided demonstrated a high level of understandability due to the well-structured MVC architecture and well-defined interface. 
+Collectively, modifying or adding functionalities was relatively programmer-friendly.
+
+One notable limitation is that the file I/O method relies on the Model class, which should be in the Controller. 
+Besides, hardcoding in operations, such as in FilterOperations and KernelOperations, should be replaced with the use of loops.
+
+There are some significant duplications in the commands folder, such as RedComponentCommand, BlueComponentCommand, 
+GreenComponentCommand, HorizontalFlipCommand, VerticalFlipCommand, HistogramCommand and others. 
+This design should be reconsidered or refactored to reduce redundancy. Similar issues exist in classes like LumaComponentCommand,
+IntensityComponentCommand, ColorCorrectCommand and others.
+
+Despite encountering issues with PPM (as explained in the ReadMe file), all functionalities were successfully implemented.
+The runtime errors from the program itself were appropriately handled. However, the user command error is not properly handled.
+For example, when a user inputs an erroneous command, such as having one more or one less argument, this can lead to the system getting stuck.
+
+The way the code was written was very clean and we never had problems understanding what any part of the code was doing.
+The program was very well-documented as well, providing us with ample directions and instructions as required.
+All of these factors contributed to making their code very convenient to add extra features to (dithering).
+
+The only communication between our teams was the program not working correctly with PPM inputs. They have designed their program to accept PPM inputs 
+of a specific format, which isn't the general PPM format that we have been working with during these set of assignments. 
+We communicated this to them, and though they were prompt in their responses and tried their best to fix the problem, 
+we could not get this sorted, and hence our team proceeded with the other implementations required for this assignment.

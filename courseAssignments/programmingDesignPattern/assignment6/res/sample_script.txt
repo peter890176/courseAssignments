@@ -1,0 +1,25 @@
+load JPG.jpg jpg
+compress 20 jpg jpg_compressed_20
+save jpg_compressed_20.jpg jpg_compressed_20
+histogram jpg_compressed_20 jpg_compressed_20_histogram
+save jpg_compressed_20_histogram.jpg jpg_compressed_20_histogram
+compress 50 jpg jpg_compressed_50
+save jpg_compressed_50.jpg jpg_compressed_50
+histogram jpg_compressed_50 jpg_compressed_50_histogram
+save jpg_compressed_50_histogram.jpg jpg_compressed_50_histogram
+color-correct jpg jpg_color_corrected
+save jpg_color_corrected.jpg jpg_color_corrected
+histogram jpg_color_corrected jpg_color_corrected_histogram
+save jpg_color_corrected_histogram.jpg jpg_color_corrected_histogram
+levels-adjust 20 130 255 jpg jpg_levels_adjust_1
+save jpg_levels_adjust_1.jpg jpg_levels_adjust_1
+histogram jpg_levels_adjust_1 jpg_levels_adjust_1_histogram
+save jpg_levels_adjust_1_histogram.jpg jpg_levels_adjust_1_histogram
+levels-adjust 0 130 220 jpg jpg_levels_adjust_2
+save jpg_levels_adjust_2.jpg jpg_levels_adjust_2
+histogram jpg_levels_adjust_2 jpg_levels_adjust_2_histogram
+save jpg_levels_adjust_2_histogram.jpg jpg_levels_adjust_2_histogram
+luma-component jpg jpg_luma_split split 50
+save jpg_luma_split.jpg jpg_luma_split
+sepia jpg jpg_sepia_split split 50
+save jpg_sepia_split.jpg jpg_sepia_split
