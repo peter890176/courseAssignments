@@ -1,0 +1,116 @@
+/* index.css - Styling for ProfileDetails Component */
+.profile-details {
+    background-color: #f9f9f9; /* Light background for the details area */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile-details h3, .profile-details h4 {
+    color: #333; /* Dark color for headers for better readability */
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    color: #666; /* Muted text color for less important text */
+    font-size: 1rem;
+    margin-bottom: 5px; /* Consistent spacing */
+}
+
+/* Styling for action buttons */
+button, .logoutButton {
+    background-color: #404de1; /* Green background for positive actions */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+
+
+
+button:hover, .logoutButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logoutButton {
+    background-color: #e74c3c; /* Red background for logout for immediate recognition */
+}
+
+.logoutButton:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+#question_list {
+    background-color: #fff; /* White background for questions list */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bold_title {
+    font-size: 1.2rem;
+    color: #2c3e50; /* Dark blue for significant title text */
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .profile-details, #question_list, button, .logoutButton {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* index.css - Styling for ProfileEditor Component */
+input, label {
+    display: block;
+    margin: 10px 0; /* Spacing for clarity */
+    width: 100%; /* Full-width inputs for better usability */
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners for modern look */
+    font-size: 16px; /* Sufficient size for easy reading */
+}
+
+label {
+    font-weight: bold;
+    color: #333; /* Dark color for visibility */
+}
+
+p {
+    color: #e53e3e; /* Warning color for validation messages */
+    font-size: 0.9rem; /* Smaller font size for helper text */
+}
+
+button:hover {
+    background-color: #254bdf; /* Darker shade on hover */
+}
+
+
+/* Styling for layout and form container */
+.form-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px;
+}
+
+/* Layout for individual form sections */
+.form-section {
+    margin-bottom: 20px; /* Separation between form sections */
+}

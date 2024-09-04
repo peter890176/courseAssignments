@@ -1,0 +1,36 @@
+/* index.css - Minimalist Styles for Tag Component */
+
+.tagNode {
+    background-color: #f7f7f7; /* Very light grey for a minimalist background */
+    padding: 0.8rem; /* Slightly less padding for a tighter look */
+    margin: 0.5rem; /* Margin to prevent tags from sticking to each other */
+    width: auto; /* Allows the tag to shrink/grow with content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px; /* More pronounced rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter shadow for a subtle lift */
+}
+
+.tagNode:hover {
+    background-color: #eaeaea; /* A hint darker on hover for interactive feedback */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Increased shadow for a 'raised' effect */
+}
+
+
+
+.tagNode .tagName {
+    color: #2c3e50; /* Darker text for contrast */
+    font-size: 0.9rem; /* A more refined font size */
+    font-weight: 1000; /* Medium font weight for a balance between bold and regular */
+    margin-bottom: 0.5rem; /* Reduce space between elements for a compact design */
+}
+
+/* Subdued style for the question count, emphasizing the tag name */
+.tagNode > div {
+    color: #95a5a6; /* Muted color for secondary information */
+    font-size: 0.75rem; /* Smaller font size to emphasize the tag name over the count */
+}

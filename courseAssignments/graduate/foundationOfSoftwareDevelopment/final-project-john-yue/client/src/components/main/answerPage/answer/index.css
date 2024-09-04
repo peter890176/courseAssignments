@@ -1,0 +1,45 @@
+/* index.css - Modern Minimalist Styles for Answer Component */
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem; /* Comfortable padding around content */
+    margin-bottom: 1rem; /* Space between answers */
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition on hover */
+}
+
+.answer:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Deeper shadow on hover for a 'lifted' effect */
+}
+
+.answerText {
+    flex: 3; /* Allocates more space to the answer text */
+    font-size: 1rem; /* Appropriate font size for readability */
+    color: #4a4a4a; /* Soft dark color for text */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+.answerAuthor {
+    flex: 1; /* Less space for the author section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px; /* Space from the text */
+}
+
+.answer_author {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue for a subtle touch of color */
+    margin-bottom: 5px; /* Spacing from the meta information */
+}
+
+.answer_question_meta {
+    font-size: 0.8rem;
+    color: #7f8c8d; /* Muted grey for metadata */
+}

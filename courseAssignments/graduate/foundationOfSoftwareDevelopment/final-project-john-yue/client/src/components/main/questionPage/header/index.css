@@ -1,0 +1,71 @@
+/* index.css - Styles for QuestionHeader Component */
+.space_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.right_padding {
+    padding-right: 20px; /* Consistent right padding */
+}
+
+.bold_title {
+    font-size: 2rem; /* Larger font size for titles */
+    font-weight: bold;
+    color: #2c3e50; /* Dark shade for a strong title presence */
+    margin: 0; /* Remove margin if any */
+}
+
+.bluebtn {
+    background-color: #3498db; /* Vibrant blue color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.bluebtn:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+#question_count {
+    font-size: 1.25rem;
+    color: #000000; /* Soft color for the question count */
+    padding-left: 20px;
+    
+}
+/* Enhanced button styles */
+.btns button {
+    margin: 0 5px; /* Increased spacing between buttons */
+    padding: 6px 8px; /* Adequate padding for a comfortable clickable area */
+    background-color: #3498db; /* Pleasant blue for a primary button */
+    color: white; /* White text to contrast the background */
+    
+    border: 2px solid transparent; /* Prepares a border for hover state changes */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Changes the cursor to signify clickable items */
+    transition: transform 0.1s ease-in-out; /* Smooth transition for multiple properties */
+    text-transform: uppercase; /* Makes all the text uppercase for a button style */
+    
+    letter-spacing: 0.05em; /* Adds spacing between characters */
+}
+
+/* Button hover state for visual feedback */
+.btns button:hover {
+    background-color: #2980b9; /* Darkens the button on hover for interaction feedback */
+    transform: translateY(-2px); /* Slightly raises the button to give a feeling of elevation */
+    
+}
+
+/* Button focus state for accessibility */
+.btns button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.5); /* Adds a subtle glow to highlight focus */
+}
+
+/* Add styles for OrderButton if needed, or import existing styles */

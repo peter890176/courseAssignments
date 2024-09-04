@@ -1,0 +1,41 @@
+/* index.css - Styles for Header Component */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust to space-between for better balance */
+    padding: 0 20px; /* Add horizontal padding */
+    height: 60px; /* Set a fixed height */
+    width: 100%;
+    background: #2c3e50; /* A darker shade for a more professional appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.title {
+    font-size: 1.75rem; /* Adjust font size to be responsive */
+    font-weight: 800;
+    color: #ecf0f1; /* Light color for the title on dark background */
+}
+
+#searchBar {
+    flex: 1; /* Allows the search bar to take up available space */
+    margin: 0 15px; /* Add some margin around the search bar */
+    padding: 8px 15px; /* Padding inside the search bar */
+    font-size: 1rem; /* Match font size to the overall design */
+    border: 2px solid #34495e; /* Border to match the dark theme */
+    border-radius: 20px; /* Rounded corners for the search bar */
+    outline: none; /* Removes the default focus outline */
+    transition: all 0.3s ease; /* Transition for interactions */
+}
+
+#searchBar::placeholder {
+    color: #95a5a6; /* Placeholder text color */
+}
+
+#searchBar:focus {
+    border-color: #3498db; /* Highlight color when focused */
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2); /* Glow effect on focus */
+}
+
+#searchBar:focus::placeholder {
+    color: transparent; /* Hide placeholder text when focused */
+}

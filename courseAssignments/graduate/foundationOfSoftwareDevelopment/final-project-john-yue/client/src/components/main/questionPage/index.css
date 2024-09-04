@@ -1,0 +1,50 @@
+/* index.css - Styles for QuestionPage */
+
+/* General padding around the question list for layout consistency */
+.question_list {
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space between header and question list */
+}
+
+/* Ensures that the last question in the list doesn't have a bottom border */
+.question_list:last-child {
+    border-bottom: none;
+}
+
+/* Style for when no questions are found */
+.no_questions {
+    font-size: 1rem;
+    color: #7f8c8d; /* Soft color for empty message */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Adequate padding for aesthetic spacing */
+}
+
+/* If there are specific styles for .btns in this context, adjust as needed */
+.btns {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    padding-right: 20px; /* Consistent padding with the rest of the layout */
+}
+
+/* Styles for individual question entries, adjust as necessary */
+.question {
+    padding: 15px;
+    margin-bottom: 10px; /* Space between questions */
+    border-bottom: 1px solid #e1e1e1; /* Light border for separation */
+}
+
+/* Style adjustments for the hover state on individual questions */
+.question:hover {
+    background-color: #f9f9f9; /* Slight highlight on hover */
+}
+
+/* Adding a loading or placeholder state if needed */
+.loading_questions {
+    font-size: 1rem;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+}
